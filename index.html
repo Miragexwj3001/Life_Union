@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生命智联实践队</title>
+
+    <link rel="stylesheet" href="./static/nav-style.css">
+    <link rel="stylesheet" href="./static/styles.css">
+</head>
+
+<body>
+    <!-- =================== nav ========================= -->
+
+    <!-- Top container -->
+    <div class="top-container">
+
+        <!-- Home logo -->
+        <div class="home-logo">
+            <a class="logo-wrapper" href="#">
+                <img src="./materials/logo.png" alt="Logo" class="d-inline-block align-top">
+            </a>
+        </div>
+        <span class="team"><a href="#">北京师范大学“生命智联”实践队</a></span>
+
+        <!-- nav-container -->
+        <div class="nav-container" id="navbarSupportedContent">
+
+            <!-- 汉堡菜单按钮（仅小屏幕显示） -->
+            <button class="hamburger-btn" id="hamburgerBtn">☰</button>
+
+            <!-- nav-bar -->
+            <ul class="nav-bar" id="navBar">
+                <!-- 队伍 -->
+                <li class="nav-item dropdown active">
+                    <a class="nav-link" href="#duiwu-id">队伍<span>&#xe900;</span></a>
+                    <ul class="dropdown-menu" id="drop-Z">
+                        <li><a class="dropdown-item" href="#duiwu1-id">队伍组成</a></li>
+                        <li><a class="dropdown-item" href="#duiwu2-id">主题曲</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#duiwu3-id">原创ip</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#duiwu4-id">文创</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- 调研 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#diaoyan-id" id="navbar-team">
+                        调研<span>&#xe900;</span>
+                    </a>
+                    <ul class="dropdown-menu" id="drop-Z">
+                        <li><a class="dropdown-item" href="#diaoyan1-id">生态与乡村</a></li>
+                        <li><a class="dropdown-item" href="#diaoyan2-id">非遗文化节</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- 支教 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#zhijiao-id" id="navbar-project">
+                        支教<span>&#xe900;</span>
+                    </a>
+                    <ul class="dropdown-menu" id="drop-Z">
+                        <li><a class="dropdown-item" href="#zhijiao1-id">支教课程</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#zhijiao2-id">特色活动</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- 项目成果 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#chengguo-id" id="navbar-wet-lab">
+                        项目成果
+                    </a>
+                </li>
+
+                <!-- 合作b -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#hezuo-id" id="navbar-dry-lab">
+                        合作<span>&#xe900;</span>
+                    </a>
+                    <ul class="dropdown-menu" id="drop-Z">
+                        <li><a class="dropdown-item" href="#hezuo1-id">合作单位</a></li>
+                        <li><a class="dropdown-item" href="#hezuo2-id">合成创生</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- 关于顺昌 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#shunchang-id" id="navbar-engagement">
+                        关于顺昌
+                    </a>
+                </li>
+
+                <!-- 关于我们 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#women-id" id="hardware">
+                        关于我们
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- nav-js -->
+    <script>
+        // ------------- 导航栏汉堡按钮 ------------------
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburgerBtn = document.getElementById('hamburgerBtn');
+            const navBar = document.getElementById('navBar');
+
+            hamburgerBtn.addEventListener('click', function () {
+                navBar.classList.toggle('active'); // 切换菜单显示/隐藏
+            });
+
+            // 点击页面其他区域关闭菜单
+            document.addEventListener('click', function (e) {
+                if (!e.target.closest('.nav-container')) {
+                    navBar.classList.remove('active');
+                }
+            });
+        });
+    </script>
+
+    <main>
+        <!-- ======================== 主体内容 ==========================-->
+        <!-- 封面 -->
+        <div id="fengmian-id" class="fengmian">
+            <div class="fengmian-container">
+                <!-- 左侧轮播图 (占70%) -->
+                <div class="fengmian-carousel">
+                    <div class="fengmian-carousel-inner">
+                        <!-- 轮播项1 -->
+                        <div class="fengmian-carousel-item active">
+                            <img src="./materials/lunbo1/合照.jpg" alt="项目封面图1">
+                            <div class="fengmian-carousel-caption">
+                                <h3>生命智联实践队--顺昌一中</h3>
+                            </div>
+                        </div>
+                        <!-- 轮播项2 -->
+                        <div class="fengmian-carousel-item">
+                            <img src="./materials/lunbo1/集结.jpg" alt="项目封面图2">
+                            <div class="fengmian-carousel-caption">
+                                <h3>生命智联实践队--集结</h3>
+                            </div>
+                        </div>
+                        <!-- 轮播项3 -->
+                        <div class="fengmian-carousel-item">
+                            <img src="./materials/lunbo1/生态乡村调研.jpg" alt="项目封面图2">
+                            <div class="fengmian-carousel-caption">
+                                <h3>生命智联实践队--生态调研</h3>
+                            </div>
+                        </div>
+                        <!-- 轮播项4 -->
+                        <div class="fengmian-carousel-item">
+                            <img src="./materials/lunbo1/开幕式.jpg" alt="项目封面图2">
+                            <div class="fengmian-carousel-caption">
+                                <h3>生命智联实践队--开幕式</h3>
+                            </div>
+                        </div>
+                        <!-- 轮播项5-->
+                        <div class="fengmian-carousel-item">
+                            <img src="./materials/lunbo1/非遗剪纸.jpg" alt="项目封面图2">
+                            <div class="fengmian-carousel-caption">
+                                <h3>生命智联实践队--非遗剪纸</h3>
+                            </div>
+                        </div>
+                        <!-- 轮播项6 -->
+                        <div class="fengmian-carousel-item">
+                            <img src="./materials/lunbo1/桂溪研学.jpg" alt="项目封面图2">
+                            <div class="fengmian-carousel-caption">
+                                <h3>生命智联实践队--桂溪研学</h3>
+                            </div>
+                        </div>
+                        <!-- 轮播项7 -->
+                        <div class="fengmian-carousel-item">
+                            <img src="./materials/lunbo1/结营仪式.jpg" alt="项目封面图2">
+                            <div class="fengmian-carousel-caption">
+                                <h3>生命智联实践队--结营仪式</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 轮播控制按钮 -->
+                    <button class="fengmian-carousel-prev">❮</button>
+                    <button class="fengmian-carousel-next">❯</button>
+                    <!-- 圆点指示器 -->
+                    <div class="fengmian-carousel-indicators">
+                        <span class="fengmian-indicator active"></span>
+                        <span class="fengmian-indicator"></span>
+                        <span class="fengmian-indicator"></span>
+                        <span class="fengmian-indicator"></span>
+                        <span class="fengmian-indicator"></span>
+                        <span class="fengmian-indicator"></span>
+                        <span class="fengmian-indicator"></span>
+                    </div>
+                </div>
+
+                <!-- 右侧文字介绍 (占30%) -->
+                <div class="fengmian-intro">
+                    <h2 class="fengmian-intro-title">北京师范大学<br>"生命智联"实践队</h2>
+                    <div class="fengmian-intro-content">
+                        <p>我们是一支由14名跨学科青年组成的实践队，在竹海林间的调研中，我们将解锁“零碳顺昌”的绿色密码，追溯“朱子故里”的理学文脉，探寻生态产业化与乡村振兴的共生之道；在顺昌一中的课堂上，我们将用专业性与趣味性兼备的STEAM系列课程，点亮山区学子的科技梦想。
+                        </p>
+                        <ul class="fengmian-feature-list">
+                            <li>
+                                <span class="fengmian-feature-icon">🌱</span>
+                                <span class="fengmian-feature-text">生态文明和乡村振兴</span>
+                            </li>
+                            <li>
+                                <span class="fengmian-feature-icon">🔬</span>
+                                <span class="fengmian-feature-text">创新STEAM教育课程体系</span>
+                            </li>
+                            <li>
+                                <span class="fengmian-feature-icon">🤝</span>
+                                <span class="fengmian-feature-text">校地合作长效赋能机制</span>
+                            </li>
+                        </ul>
+                        <a href="#duiwu-id" class="fengmian-more-link">了解更多 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 队伍 -->
+        <div id="duiwu-id" class="duiwu">
+            <p class="duiwu-title">队伍</p>
+            <p class="duiwu1-title" id="duiwu1-id">▶队伍组成</p>
+            <p class="duiwu1-intro">
+                北京师范大学“生命智联”实践队于2025年5月筹建，由来自于北京师范大学生命科学学院、人工智能学院、化学学院、教育学部、历史学院等不同学部院系的14名同学组成，由生命科学学院党委书记、教授王天明和党委副书记、副教授商瑜担任指导老师。
+            </p>
+            <p class="duiwu1-intro">
+                实践队依托北京师范大学生命科学学院与人工智能学院等多学科背景，充分发挥生命科学专业特色与STEAM教育融合优势，通过“调研+支教”双轨并行的模式，服务顺昌县生态文明教育与乡村振兴发展。团队旨在通过系统调研提炼“零碳顺昌”经验，通过夏令营课程传递生态理念与科学精神，实现“教育赋能—生态转型—社会动员”的协同推进，为地方提供可复制、可推广的实践范式。
+            </p>
+            <!-- 队员展示区 -->
+            <h2 class="section-title">支教队成员</h2>
+            <div class="team-members">
+                <!-- 14个队员卡片 -->
+                <!-- 1~3 -->
+                <div class="member-card">
+                    <div class="member-img">
+                        <img src="./materials/members/朱晓菲.jpg" alt="队员1">
+                    </div>
+                    <div class="member-info">
+                        <p class="member-name">队长：朱晓菲</p>
+                        <p class="member-college">学院：生命科学学院</p>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-img">
+                        <img src="./materials/members/崔家乐.jpg" alt="队员2"">
+                </div>
+                <div class=" member-info">
+                        <p class="member-name">副队长：崔家乐</p>
+                        <p class="member-college">学院：人工智能学院</p>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-img">
+                        <img src="./materials/members/杨昕彤.jpg" alt="队员3">
+                    </div>
+                    <div class="member-info">
+                        <p class="member-name">副队长：杨昕彤</p>
+                        <p class="member-college">学院：人工智能学院</p>
+                    </div>
+                </div>
+                <!-- 4~9 -->
+                <div class="member-card">
+                    <div class="member-img">
+                        <img src="./materials/members/乔顺.jpg" alt="队员4">
+                    </div>
+                    <div class="member-info">
+                        <p class="member-name">队员：乔顺</p>
+                        <p class="member-college">学院：历史学院</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-img">
+                        <img src="./materials/members/卢心然.jpg" alt="队员5">
+                    </div>
+                    <div class="member-info">
+                        <p class="member-name">队员：卢心然</p>
+                        <p class="member-college">学院：生命科学学院</p>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-img">
+                        <img src="./materials/members/吴夏暄.jpg" alt="队员6">
+                    </div>
+                    <div class="member-info">
+                        <p class="member-name">队员：吴夏暄</p>
+                        <p class="member-college">学院：生命科学学院</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-img">
+                        <img src="./materials/members/周欣源.jpg" alt="队员7">
+                    </div>
+                    <div class="member-info">
+                        <p class="member-name">队员：周欣源</p>
+                        <p class="member-college">学院：人工智能学院</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-img">
+                        <img src="./materials/members/徐维佳.jpg" alt="队员8">
+                    </div>
+                    <div class="member-info">
+                        <p class="member-name">队员：徐维佳</p>
+                        <p class="member-college">学院：人工智能学院</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-img">
+                        <img src="./materials/members/李宇欣.jpg" alt="队员9">
+                    </div>
+                    <div class="member-info">
+                        <p class="member-name">队员：李宇欣</p>
+                        <p class="member-college">学院：生命科学学院</p>
+                    </div>
+                </div>
+                <!-- 10~14 -->
+                <div class="member-card">
+                    <div class="member-img">
+                        <img src="./materials/members/杨凯泽.jpg" alt="队员10">
+                    </div>
+                    <div class="member-info">
+                        <p class="member-name">队员：杨凯泽</p>
+                        <p class="member-college">学院：人工智能学院</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-img">
+                        <img src="./materials/members/田嘉怡.jpg" alt="队员11">
+                    </div>
+                    <div class="member-info">
+                        <p class="member-name">队员：田嘉怡</p>
+                        <p class="member-college">学院：生命科学学院</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-img">
+                        <img src="./materials/members/白宇婕.jpg" alt="队员12">
+                    </div>
+                    <div class="member-info">
+                        <p class="member-name">队员：白宇婕</p>
+                        <p class="member-college">学院：教育学部</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-img">
+                        <img src="./materials/members/练正轩.jpg" alt="队员13">
+                    </div>
+                    <div class="member-info">
+                        <p class="member-name">队员：练正轩</p>
+                        <p class="member-college">学院：人工智能学院</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-img">
+                        <img src="./materials/members/陈源.jpg" alt="队员14">
+                    </div>
+                    <div class="member-info">
+                        <p class="member-name">队员：陈源</p>
+                        <p class="member-college">学院：化学学院</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 指导老师展示区 -->
+            <h2 class="section-title">指导老师</h2>
+            <div class="teachers">
+                <!-- 2个指导老师卡片 -->
+                <div class="teacher-card">
+                    <div class="teacher-img">
+                        <img src="./materials/members/王天明.jpg" alt="指导老师1">
+                    </div>
+                    <div class="teacher-info">
+                        <p class="teacher-name">指导老师：王天明</p>
+                        <p class="teacher-college">生命科学学院党委书记、教授</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card">
+                    <div class="teacher-img">
+                        <img src="./materials/members/商瑜.png" alt="指导老师2">
+                    </div>
+                    <div class="teacher-info">
+                        <p class="teacher-name">指导老师：商瑜</p>
+                        <p class="teacher-college">生命科学学院党委副书记、副教授</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 主题曲展示区 -->
+            <p class="duiwu2-title" id="duiwu2-id">▶主题曲</p>
+            <p class="duiwu2-intro">《莫愁大圣乡》是2025北京师范大学“生命智联”实践队的主题曲，伴随着轻快活泼的旋律，跟随生命智联的步伐，一同走进“世界杉都，大圣祖地”的顺昌吧!</p>
+            <div class="theme-song-section">
+                <h2 class="section-title">莫愁大圣乡</h2>
+
+                <!-- 歌曲信息 -->
+                <div class="song-info">
+                    <div class="song-meta">
+                        <p><strong>作曲、原唱：</strong>亞細亞曠世奇才</p>
+                        <p><strong>作词：</strong>练正轩</p>
+                    </div>
+                </div>
+                <!-- 音频播放器 -->
+                <div class="audio-player">
+                    <audio controls>
+                        <source src="./materials/莫愁大圣乡.mp3" type="audio/mpeg">
+                        您的浏览器不支持音频播放功能
+                    </audio>
+                </div>
+                <!-- 歌词展示区 -->
+                <div class="lyrics-container">
+                    <div class="lyrics-columns">
+                        <div class="lyrics-column">
+                            <p class="verse">我心栖在了</p>
+                            <p class="verse">这片杉林</p>
+                            <p class="verse">云卷云舒</p>
+                            <p class="verse">一村一村一村一村映晨昏</p>
+                            <p class="verse">旧街回旋</p>
+                            <p class="verse">木屑的余温</p>
+                            <p class="verse">鼓面上轻轻响</p>
+                            <p class="verse">古调伴我踏春昏</p>
+                            <br>
+                            <p class="chorus">没什么大能耐</p>
+                            <p class="chorus">却有信心改未来</p>
+                            <p class="chorus">滋养人的从来</p>
+                            <p class="chorus">不止故土</p>
+                            <p class="chorus">还有期待</p>
+                            <p class="chorus">救命毫毛</p>
+                            <p class="chorus">提醒我不要再徘徊</p>
+                            <p class="chorus">哦我豁然洞开</p>
+                            <p class="chorus">原来是初心在盛开</p>
+                            <p class="chorus">漏了一拍</p>
+                            <br>
+                            <p class="verse">我把眉间愁绪都酿成清醇</p>
+                            <p class="verse">杉香混着米酒也动人心</p>
+                            <p class="verse">可抬头望见那天空上的乌云</p>
+                            <p class="verse">竟然化作了漫天的辰星</p>
+                            <p class="verse">呀——</p>
+                            <p class="verse">篝火回旋</p>
+                            <p class="verse极">竹影浮沉</p>
+                            <p class="verse">不请自来</p>
+                            <p class="verse">非遗在指尖活成了光轮</p>
+                            <p class="verse">青春作弦也拨亮了夜深</p>
+                            <br>
+                            <p class="chorus">梦带我去个好地方</p>
+                            <p class="chorus">摇摇晃晃是大圣乡</p>
+                            <p class="chorus">炊烟漫过青砖黛瓦</p>
+                            <p class="chorus">脚印伴随着微光</p>
+                            <p class="chorus">这伤</p>
+                            <p class="chorus">不再作痛</p>
+                            <p class="chorus">他讲</p>
+                            <p class="chorus">有我守望</p>
+                            <p class="chorus">都是新的锋芒</p>
+                            <br>
+                            <p class="chorus">你眼里闪着光芒</p>
+                            <p class="chorus">我诉衷肠向大圣乡</p>
+                            <p class="chorus">叹息吹成地上霜
+                            </p>
+                            <p class="chorus">明明快崩溃了</p>
+                            <p class="chorus">却学会拥抱滚烫希望</p>
+                            <p class="chorus">宝山灵台叮当响</p>
+                            <p class="chorus">往我掌心上落甘糖</p>
+                            <p class="chorus">孩儿莫慌</p>
+                            <p class="chorus">大圣与你同航</p>
+                        </div>
+                        <div class="lyrics-column">
+                            <p class="verse">放声去唱</p>
+                            <p class="verse">这里没人</p>
+                            <p class="verse">会笑话你</p>
+                            <p class="verse">人生大事</p>
+                            <p class="verse">莫过追梦</p>
+                            <p class="verse">其他都不拘泥</p>
+                            <p class="verse">现实再要命呀</p>
+                            <p class="verse">也挡不住大圣与你</p>
+                            <p class="verse">你听</p>
+                            <p class="verse">年轻的引擎在轰鸣</p>
+                            <br>
+                            <p class="verse">累了沿杉径流浪流浪</p>
+                            <p class="verse">放心吧金箍棒够亮够亮</p>
+                            <p class="verse">我说的我不怕</p>
+                            <p class="verse">我真的在闯荡</p>
+                            <p class="verse">朝九晚八</p>
+                            <p class="verse">披着星光</极p>
+                            <p class="verse">孩子你在远方缺啥极少啥</p>
+                            <p class="verse">有事没事打一通话</p>
+                            <p class="verse">孩子啥时候回家</p>
+                            <p class="verse">家乡的草莓熟透啦</p>
+                            <br>
+                            <p class="chorus">几度梦回大圣乡</p>
+                            <p class="chorus">回回梦都更敞亮</p>
+                            <p class="chorus">纸飞机掠过操场后</p>
+                            <p class="chorus">铁了心地去远方</p>
+                            <p class="chorus">哪管前路几多长</p>
+                            <p class="chorus">偏信远方有曙光</p>
+                            <p class="chorus">却输岁月半柱香</p>
+                            <p class="chorus">人走茶凉</p>
+                            <br>
+                            <p class="chorus">几度梦回大圣乡</p>
+                            <p class="chorus">旧木船漂进了杉浪</p>
+                            <p class="chorus">载着未寄出的信</p>
+                            <p class="chorus">还有糖纸染上的香</p>
+                            <p class="chorus">摇</p>
+                            <p class="chorus">摇摇晃晃</p>
+                            <p class="chorus">飘</p>
+                            <p class="chorus">飘飘荡荡</p>
+                            <p class="chorus">孩儿抬头望</p>
+                            <p class="chorus">大圣在天上</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 原创IP形象展示区 -->
+            <p class="duiwu3-title" id="duiwu3-id">▶原创IP形象</p>
+            <div class="ip-showcase">
+                <h2 class="section-title">孙小圣</h2>
+                <div class="ip-content">
+                    <!-- 左侧双图排列 -->
+                    <div class="ip-images">
+                        <div class="ip-image-box">
+                            <img src="./materials/ip/孙小圣q版1.png" alt="Q版造型" class="ip-img">
+                            <p class="img-label">Q版造型</p>
+                        </div>
+                        <div class="ip-image-box">
+                            <img src="./materials/ip/孙小圣手办正面.png" alt="经典造型" class="ip-img">
+                            <p class="img-label">手办造型</p>
+                        </div>
+                    </div>
+
+                    <!-- 右侧文字描述 -->
+                    <div class="ip-desc">
+                        <h3>我们的“孙小圣”</h3>
+                        <p>这是生命智联实践队的原创IP形象“孙小圣”。</p>
+                        <p>它的创意源自福建顺昌深厚的“大圣祖地”文化与地方石猴遗产，将传统孙悟空元素与地方石猴特征相融合。设计以活泼可爱的卡通风格呈现，形象兼具文化传承与现代传播力，传递亲和力与朝气，既体现地域文化独特性，也彰显团队活力与创新精神。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 文创展示区 -->
+            <p class="duiwu3-title" id="duiwu4-id">▶文创</p>
+            <div class="ip-showcase">
+                <h2 class="section-title">廖刚</h2>
+                <div class="ip-content">
+                    <!-- 左侧双图排列 -->
+                    <div class="ip2-images">
+                        <div class="ip-image-box">
+                            <img src="./materials/ip/廖刚海报.png" alt="Q版造型" class="ip-img">
+                            <p class="img-label">廖刚--文创</p>
+                        </div>
+                        <div class="ip-image-box">
+                            <img src="./materials/ip/廖刚正比立绘.png" alt="经典造型" class="ip-img">
+                            <p class="img-label">廖刚立绘</p>
+                        </div>
+                    </div>
+
+                    <!-- 右侧文字描述 -->
+                    <div class="ip-desc">
+                        <h3>高峰居士人物志</h3>
+                        <p>这是生命智联实践队以北宋时期顺昌人廖刚为原型ip设计的文创。</p>
+                        <p>廖刚（1070-1143），字用中，号高峰居士，北宋顺昌谟武人。少时从学理学家杨时，成就了廖刚“道南高弟，绍兴名臣”的美名。廖刚一生亲历两朝荣辱兴衰，历任刑部侍即、御史中丞、工部尚书。他持身立朝，忧国爱民，对外力主抗敌御侮、对内全力慰抚百姓；他刚正不阿，忠直抗言，令蔡京、秦桧等奸邪沮气。廖刚的精神和品格名重于天下，名扬于干古，为世代所赞颂。
+                        </p>
+                        <a href="https://mp.weixin.qq.com/s/-KX-I53QnPQjHIVUeknbSg">了解更多关于廖刚的故事>></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 调研 -->
+        <div id="diaoyan-id" class="diaoyan">
+            <p class="diaoyan-title">调研</p>
+            <div class="research-intro">
+                <p>在乡村调研方面，生命智联实践队深入贯彻乡村振兴、生态文明和绿色发展的理念，实地走访当地的村民和相关产业负责人，系统梳理顺昌县在产业生态化与生态产业化领域的创新实践，深度剖析顺昌县“产业融合+组织创新”的乡村振兴路径，为全国同类地区提供参考框架。
+                </p>
+            </div>
+            <!-- 生态与乡村 -->
+            <div class="research-section" id="diaoyan1-id">
+                <h2 class="section-title">生态与乡村</h2>
+                <div class="card-container">
+                    <!-- 卡片1：左文右图 -->
+                    <div class="research-card card-left">
+                        <div class="card-text">
+                            <h4>生态产业调研</h4>
+                            <p>从供给端（洋口国有林场）和需求端（升升木业）的两个产业走访，以及森林生态银行馆的走访，了解顺昌县森林生态银行、“一元碳汇”的创新发展模式.</p>
+                            <div class="card-hint">点击右方图片查看更多</div>
+                        </div>
+                        <div class="card-image">
+                            <a href="https://mp.weixin.qq.com/s/YYPOwaBBm0PFPym2hoyqlQ" class="image-link"
+                                aria-label="查看杉林生态详情" target="_blank">
+                                <img src="./materials/diaoyan/linchang.jpg" alt="生态图片">
+                                <div class="link-overlay">
+                                    <span>查看详情</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 卡片2：左图右文 -->
+                    <div class="research-card card-right">
+                        <div class="card-image">
+                            <a href="https://mp.weixin.qq.com/s/n9AH5k1lNud4dCJW9yhb-A" class="image-link"
+                                aria-label="查看孙小圣手办详情" target="_blank">
+                                <img src="./materials/diaoyan/2.jpg" alt="孙小圣手办正面">
+                                <div class="link-overlay">
+                                    <span>查看详情</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-text">
+                            <h4>生态治理与生态文明素养调研</h4>
+                            <p>生命智联实践队聚焦于顺昌县村居环境治理与生态文明素养，通过与村干部、村民入户进行问卷调查的方式收集37份问卷数据，包括4份“村庄”问卷和33份“村民”问卷。</p>
+                            <div class="card-hint">点击左方图片查看更多</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 非遗文化节 -->
+            <div class="research-section" id="diaoyan2-id">
+                <h2 class="section-title">非遗文化节</h2>
+                <div class="card-container">
+                    <!-- 卡片1：左文右图 -->
+                    <div class="research-card card-left">
+                        <div class="card-text">
+                            <h4>非遗剪纸艺术</h4>
+                            <p>顺昌一中2023届毕业生、福建省南平市顺昌县一剪芳华文化传媒有限公司创始人邱艺倩，给同学们带来了精彩的非物质文化遗产——剪纸的讲座和表演。同学和老师们都在亲自体验的剪纸作品的过程中，感受非遗文化的独特魅力。
+                            </p>
+                            <div class="card-hint">点击右方图片查看更多</div>
+                        </div>
+                        <div class="card-image">
+                            <a href="https://mp.weixin.qq.com/s/PiQl9mDiuNifdgxUch3k1g" class="image-link"
+                                aria-label="查看杉林生态详情" target="_blank">
+                                <img src="./materials/diaoyan/jianzhi.jpg" alt="生态图片">
+                                <div class="link-overlay">
+                                    <span>查看详情</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 卡片2：左图右文 -->
+                    <div class="research-card card-right">
+                        <div class="card-image">
+                            <a href="https://mp.weixin.qq.com/s/zVNr9xDoKQm6rHXHO5soPw" class="image-link"
+                                aria-label="查看孙小圣手办详情" target="_blank">
+                                <img src="./materials/diaoyan/guixi.jpg" alt="孙小圣手办正面">
+                                <div class="link-overlay">
+                                    <span>查看详情</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-text">
+                            <h4>桂溪研学</h4>
+                            <p>本次研学通过“理论讲授+技艺实操+饮食体验”三维模式，构建非遗文化传承的创新路径。7月20日早晨，生命智联实践队在县妇联主席陈晓红的带领下来到了仁寿镇非遗研习所。在专业讲解员引导下，系统了解仁寿镇非物质文化遗产的历史沿革与保护现状。实践队也与顺昌县青少年于桂溪村衍桂堂研学基地开展双向教学活动。最后，队员们前往仁寿镇中心街体验饮食文化遗产，如顺昌灌蛋和仙草蜜。
+                            </p>
+                            <div class="card-hint">点击左方图片查看更多</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 支教 -->
+        <div id="zhijiao-id" class="zhijiao">
+            <p class="zhijiao-title">支教</p>
+            <!-- 课程板块 -->
+            <div class="course-section">
+                <h2 class="section-title" id="zhijiao1-id">支教课程</h2>
+                <div class="course-container">
+                    <!-- 课程介绍 -->
+                    <div class="course-intro">
+                        <h3>STEAM特色课程</h3>
+                        <p>14名队员精心打造数十门课程，涵盖科学、文化、艺术、体育、心理等各个方面的内容。课程分为“科学奇想营”、“智联创想营”、“顺昌文旅行”、“艺术工作坊”、“青春加油站”五大核心模块，贯彻STEAM学科素养，充分发挥北京师范大学学科特色。在“学为人师，行为世范”的思想指导下，积极尝试讨论式和互动式的教学，拓宽学生眼界，培养学习兴趣。
+                        </p>
+                        <ul class="course-features">
+                            <li>科学奇想营：在双手间玩转科学奥秘，在脑海里勾勒未来图景。</li>
+                            <li>智联创想营：探索计算的边界，触碰智能的脉搏。</li>
+                            <li>顺昌文旅行：沿着朱子和大圣的脉络，解码顺昌的文化基因。</li>
+                            <li>艺术工作坊：于轻快节奏中感受青春灵动，于五彩斑斓中体验生命活力。</li>
+                            <li>青春加油站：把困惑卸下，将梦想加满，让青春绽放，下一程扬帆远航。</li>
+                        </ul>
+                        <p class="course-tip">点击右侧图片可查看大图</p>
+                        <h3 class="">支教日记</h3>
+                        <p class="riji"><a href="https://mp.weixin.qq.com/s/8G2haVQ0wyy0_J0k0w7xMA">相逢盛夏 |
+                                “生命智联”支教日记Day1</a>
+                        </p>
+                        <p class="riji"><a href="https://mp.weixin.qq.com/s/q9thVOO3ZIJn0oPHthpW2Q">智趣星火 |
+                                “生命智联”支教日记Day2</a></p>
+                        <p class="riji"><a href="https://mp.weixin.qq.com/s/WTJg94rpoeMFpGl-g-8b-A">智育生花 |
+                                “生命智联”支教日记Day3</a></p>
+                        <p class="riji"><a href="https://mp.weixin.qq.com/s/1gUISZoclgCRFpvOc_LxFg">智趣相映 |
+                                “生命智联”支教日记Day4</a></p>
+                        <p class="riji"><a href="https://mp.weixin.qq.com/s/iEdGO--J7l1xis2P0dYc8A">五色经纬 |
+                                “生命智联”支教日记Day5</a></p>
+                        <p class="riji"><a href="https://mp.weixin.qq.com/s/1B3-mnxUWBBwD3C0GW8Hkw">禾醒蝉时 |
+                                “生命智联”支教日记Day6&7</a></p>
+                        <p class="riji"><a href="https://mp.weixin.qq.com/s/F_-1_tHcyp3eLSBPdwrdfA">云衍夏光 |
+                                “生命智联”支教日记Day8&9</a></p>
+                    </div>
+
+                    <!-- 图片轮播 -->
+                    <div class="course-carousels">
+                        <!-- 课程海报轮播 -->
+                        <div class="carousel-container">
+                            <h4>课程海报</h4>
+                            <div class="carousel poster-carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./materials/haibao/乔顺.png" alt="科学实验课海报" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/haibao/吴夏瑄.png" alt="创意美术课海报" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/haibao/心灵加油站 朱晓菲.png" alt="创意美术课海报" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/haibao/感官探秘 从头开始 李宇欣.png" alt="创意美术课海报" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/haibao/智体律动 焕彩青春 杨凯泽.png" alt="创意美术课海报" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/haibao/有机魔术师 周欣源.png" alt="创意美术课海报" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/haibao/白宇婕1.jpg" alt="创意美术课海报" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/haibao/白宇婕2.jpg" alt="创意美术课海报" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/haibao/田嘉怡.jpg" alt="创意美术课海报" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/haibao/色彩原理与创作 卢心然.png" alt=创意美术课海报" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/haibao/走进算法 崔家乐.png" alt="创意美术课海报" class="zoomable">
+                                    </div>
+                                    <!-- 更多海报... -->
+                                </div>
+                                <button class="carousel-prev">❮</button>
+                                <button class="carousel-next">❯</button>
+                            </div>
+                        </div>
+
+                        <!-- 上课画面轮播 -->
+                        <div class="carousel-container">
+                            <h4>课堂精彩瞬间</h4>
+                            <div class="carousel photo-carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./materials/course/1.jpg" alt="科学实验课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/2.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/3.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/4.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/5.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/6.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/7.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/8.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/9.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/10.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/11.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/12.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/13.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/14.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/15.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/16.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/17.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/18.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/19.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/20.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/21.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/22.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/23.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/24.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/25.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/26.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/27.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/28.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/29.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/30.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/31.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/32.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/33.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/34.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/35.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./materials/course/36.jpg" alt="美术创作课" class="zoomable">
+                                    </div>
+                                </div>
+                                <button class="carousel-prev">❮</button>
+                                <button class="carousel-next">❯</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 活动板块 -->
+            <div class="activity-section">
+                <h2 class="section-title" id="zhijiao2-id">特色活动</h2>
+                <!-- 支教活动时间轴 -->
+                <div class="timeline">
+                    <!-- 开幕式 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">7月15日</div>
+                        <div class="timeline-content">
+                            <!-- 图片在左侧 -->
+                            <div class="timeline-image">
+                                <img src="./materials/activities/开幕式.jpg" alt="开幕式">
+                            </div>
+                            <!-- 文字内容在右侧 -->
+                            <div class="timeline-text">
+                                <h3>开幕式</h3>
+                                <a href="https://mp.weixin.qq.com/s/Zh5FzIXab_y1uKmIJAckQA" target="_blank">点击了解更多->
+                                </a>
+                                <p>北京师范大学-顺昌一中首届“生命智联”夏令营的开幕式在顺昌一中大礼堂拉开帷幕。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 生命大讲堂 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">7月15日</div>
+                        <div class="timeline-content">
+                            <!-- 文字内容在左侧 -->
+                            <div class="timeline-text">
+                                <h3>生命大讲堂</h3>
+                                <p>北京师范大学生命科学学院商瑜老师为顺昌一中的学生们带来了一场深入浅出的生物伦理学讲座。那些关于生命价值的思考，或许会像一颗种子，在青春的土壤里慢慢发芽，指引同学们未来在面对选择时，既葆有探索的勇气，也常怀敬畏的初心。
+                                </p>
+                            </div>
+                            <!-- 图片在右侧 -->
+                            <div class="timeline-image">
+                                <img src="./materials/activities/生命大讲堂.jpg" alt="开幕式">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 破冰班会 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">7月15日</div>
+                        <div class="timeline-content">
+                            <!-- 图片在左侧 -->
+                            <div class="timeline-image">
+                                <img src="./materials/activities/破冰仪式.jpg" alt="破冰班会">
+                            </div>
+                            <!-- 文字内容在右侧 -->
+                            <div class="timeline-text">
+                                <h3>破冰班会</h3>
+                                <p>每个班的正副班主任们带着阳光般的热情走进教室，为同学们描绘夏令营的精彩蓝图，介绍充满趣味的课程，并带领大家动手制作独特的姓名牌，让个性在色彩间跃动。精心准备的互动游戏——“emoji闯关猜猜猜”、“字词接龙造长句”、“记忆力大挑战”和“改词版听歌识曲”——让教室变成了欢乐的海洋。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 非遗剪纸 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">7月19日</div>
+                        <div class="timeline-content">
+                            <!-- 文字内容在左侧 -->
+                            <div class="timeline-text">
+                                <h3>非遗剪纸课堂</h3>
+                                <a href="https://mp.weixin.qq.com/s/PiQl9mDiuNifdgxUch3k1g" target="_blank">点击了解更多->
+                                </a>
+                                <p>顺昌一中2023届毕业生、福建省南平市顺昌县一剪芳华文化传媒有限公司创始人邱艺倩，给同学们带来了精彩的非物质文化遗产——剪纸的讲座和表演。同学和老师们都参与进来，亲手剪下属于自己的剪纸作品。
+                                </p>
+                            </div>
+                            <!-- 图片在右侧 -->
+                            <div class="timeline-image">
+                                <img src="./materials/activities/非遗剪纸.jpg" alt="非遗剪纸">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 体育文化节 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">7月18日-7月23日</div>
+                        <div class="timeline-content">
+                            <!-- 图片在左侧 -->
+                            <div class="timeline-image">
+                                <img src="./materials/activities/体育文化节.jpg" alt="体育文化节">
+                            </div>
+                            <!-- 文字内容在右侧 -->
+                            <div class="timeline-text">
+                                <h3>体育文化节</h3>
+                                <p>老师带领同学们进行趣味体育活动，一共分为5个游戏板块：1.指东往西、2.盲人摸象指挥赛、3.接力翻牌游戏、4.投壶游戏、5.双人运气球，同学们自主参与各种活动包括单人游戏和团队游戏，在活动结束后通过积分制排名领取北师大奖品。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 辩论会 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">7月24日</div>
+                        <div class="timeline-content">
+                            <!-- 文字内容在左侧 -->
+                            <div class="timeline-text">
+                                <h3>辩论会</h3>
+                                <p>辩题：“合成生物学的广泛应用是利大于弊还是弊大于利”。正反双方辩手们思维敏捷，论点新颖独特。他们旁征博引，从不同的角度阐述着自己的观点：正方选手秉持着合成生物学发展为世界人民带来的利益与贡献而据理力争，反方选手则紧抓未来的发展可能会脱离控制、现阶段的法律政策尚不成熟等问题毫不示弱。双方你来我往，互不相让，比赛精彩纷呈。
+                                </p>
+                            </div>
+                            <!-- 图片在右侧 -->
+                            <div class="timeline-image">
+                                <img src="./materials/activities/辩论会.jpg" alt="辩论会">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 结营仪式 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">7月24日</div>
+                        <div class="timeline-content">
+                            <!-- 图片在左侧 -->
+                            <div class="timeline-image">
+                                <img src="./materials/activities/结营仪式.jpg" alt="结营仪式">
+                            </div>
+                            <!-- 文字内容在右侧 -->
+                            <div class="timeline-text">
+                                <h3>结营仪式</h3>
+                                <a href="https://mp.weixin.qq.com/s/jQa5NONymF99m4gsd_jEVg" target="_blank">点击了解更多->
+                                </a>
+                                <p>北京师范大学-顺昌一中首届"生命智联"夏令营迎来了最令人难忘的压轴时刻！在欢笑与感动交织的氛围中，100余名师生齐聚顺昌一中礼堂，用一场充满青春活力的结营仪式，为这段为期10天的精彩夏令营活动画上圆满句号。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 项目成果 -->
+        <div id="chengguo-id" class="chengguo">
+            <p class="chengguo-title">项目成果</p>
+            <h2 class="section-title">项目影响力</h2>
+            <div class="chengguo-contain">
+                <!-- 权威媒体 -->
+                <div class="media-section">
+                    <h3 class="media-category">权威媒体</h3>
+                    <div class="media-list">
+                        <div class="media-item">
+                            <div class="media-source">
+                                <span class="media-name">中国网·海丝频道</span>
+                                <span class="media-date">2025-07-30</span>
+                            </div>
+                            <p class="media-title">北京师范大学生命智联实践队在顺昌一中开展STEAM素养创意夏令营</p>
+                            <a href="http://hs.china.com.cn/2025-07/30/content_43188364.html" target="_blank"
+                                class="media-link">查看报道</a>
+                        </div>
+
+                        <div class="media-item">
+                            <div class="media-source">
+                                <span class="media-name">中国日报网</span>
+                                <span class="media-date">2025-07-31</span>
+                            </div>
+                            <p class="media-title">北京师范大学生命智联实践队在顺昌一中开展STEAM素养创意夏令营</p>
+                            <a href="https://cn.chinadaily.com.cn/a/202507/31/WS688b0e0ba310a07bb590b319.html#"
+                                target="_blank" class="media-link">查看报道</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 地方媒体 -->
+                <div class="media-section">
+                    <h3 class="media-category">地方媒体</h3>
+                    <div class="media-list">
+                        <div class="media-item">
+                            <div class="media-source">
+                                <span class="media-name">顺昌县第一中学</span>
+                                <span class="media-date">2025-07</span>
+                            </div>
+                            <p class="media-title">【同心党建·全域育人】校地协同共育科创人才——北京师范大学-顺昌一中首届"生命智联"夏令营开幕</p>
+                            <a href="https://mp.weixin.qq.com/s/ZPiV3Wfll9SlYWjUtJUgDg" target="_blank"
+                                class="media-link">查看报道</a>
+                        </div>
+
+                        <div class="media-item">
+                            <div class="media-source">
+                                <span class="media-name">新顺昌</span>
+                                <span class="media-date">2025-07</span>
+                            </div>
+                            <p class="media-title">多彩校园丨首届"生命智联"夏令营开营</p>
+                            <a href="https://mp.weixin.qq.com/s/kZRbX59tZ3pSZsZpucdy_g" target="_blank"
+                                class="media-link">查看报道</a>
+                        </div>
+
+                        <div class="media-item">
+                            <div class="media-source">
+                                <span class="media-name">顺昌新闻</span>
+                                <span class="media-date">2025-07-16</span>
+                            </div>
+                            <p class="media-title">2025年北京师范大学—顺昌一中首届"生命智联"夏令营开营</p>
+                            <a href="https://mp.weixin.qq.com/s/RIsX7zyvacsQGtja2CF37w" target="_blank"
+                                class="media-link">查看报道</a>
+                        </div>
+
+                        <div class="media-item">
+                            <div class="media-source">
+                                <span class="media-name">南平市教育局</span>
+                                <span class="media-date">2025-07</span>
+                            </div>
+                            <p class="media-title">南平教育一周要闻（7.14—7.20）09 北京师范大学-顺昌一中首届"生命智联"夏令营开幕</p>
+                            <a href="https://mp.weixin.qq.com/s/UCOOFBfybsTeUFHnt02wQg" target="_blank"
+                                class="media-link">查看报道</a>
+                        </div>
+
+                        <div class="media-item">
+                            <div class="media-source">
+                                <span class="media-name">顺昌县妇联</span>
+                                <span class="media-date">2025-07</span>
+                            </div>
+                            <p class="media-title">青春暖童心|北京师范大学暑期实践团队赴仁寿镇开展儿童关爱暨非遗研学活动</p>
+                            <a href="https://mp.weixin.qq.com/s/-72Hf-cN5yZkum6sjbuMUQ" target="_blank"
+                                class="media-link">查看报道</a>
+                        </div>
+
+                        <div class="media-item">
+                            <div class="media-source">
+                                <span class="media-name">福建青年</span>
+                                <span class="media-date">2025-07</span>
+                            </div>
+                            <p class="media-title">八闽团讯 | 2025年第65期 暑期"三下乡"社会实践活动专版（七）</p>
+                            <a href="https://mp.weixin.qq.com/s/wb6XIrwUeIyFg2nrG8GSDw" target="_blank"
+                                class="media-link">查看报道</a>
+                        </div>
+
+                        <div class="media-item">
+                            <div class="media-source">
+                                <span class="media-name">共青团顺昌县委员会</span>
+                                <span class="media-date">2025-07</span>
+                            </div>
+                            <p class="media-title">暑期三下乡丨北京师范大学生命智联实践队在顺昌一中开展STEAM素养创意夏令营</p>
+                            <a href="https://mp.weixin.qq.com/s/fOcTQh91oWV9Mf6f-qqong" target="_blank"
+                                class="media-link">查看报道</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 校级媒体 -->
+                <div class="media-section">
+                    <h3 class="media-category">校级媒体</h3>
+                    <div class="media-list">
+                        <div class="media-item">
+                            <div class="media-source">
+                                <span class="media-name">青春北师</span>
+                                <span class="media-date">2025-07</span>
+                            </div>
+                            <p class="media-title">暑期实践风采丨"生态文明铸就乡村振兴"项目实践纪实（一）——生命智联队</p>
+                            <a href="https://mp.weixin.qq.com/s/ipA5PKV7AdzXESp20BwH2g" target="_blank"
+                                class="media-link">查看报道</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 学院媒体 -->
+                <div class="media-section">
+                    <h3 class="media-category">学院媒体</h3>
+                    <div class="media-list">
+                        <div class="media-item">
+                            <div class="media-source">
+                                <span class="media-name">京师生命公众号</span>
+                                <span class="media-date">2025-07</span>
+                            </div>
+                            <p class="media-title">青春有为 | 2025年暑期社会实践队"生命智联"集结启程</p>
+                            <a href="https://mp.weixin.qq.com/s/11h7EV9kDhGHh9vvGXYhTw" target="_blank"
+                                class="media-link">查看报道</a>
+                        </div>
+
+                        <div class="media-item">
+                            <div class="media-source">
+                                <span class="media-name">京师生命公众号</span>
+                                <span class="media-date">2025-07</span>
+                            </div>
+                            <p class="media-title">解码生命韵律，助力多元成长：中国日报网报道"生命智联"实践队</p>
+                            <a href="https://mp.weixin.qq.com/s/MH2GDSjJ0bR7jWoFtj0D0g" target="_blank"
+                                class="media-link">查看报道</a>
+                        </div>
+
+                        <div class="media-item">
+                            <div class="media-source">
+                                <span class="media-name">京师生命公众号</span>
+                                <span class="media-date">2025-07</span>
+                            </div>
+                            <p class="media-title">2025年暑期实践风采丨"生命智联"项目实践纪实</p>
+                            <a href="https://mp.weixin.qq.com/s/IW__6XsrOs-GvSr9722sYg" target="_blank"
+                                class="media-link">查看报道</a>
+                        </div>
+
+                        <!-- <div class="media-item">
+                            <div class="media-source">
+                                <span class="media-name">京师生命视频号</span>
+                                <span class="media-date">2025-07</span>
+                            </div>
+                            <p class="media-title">暑期实践进行时︱"生命智联"赴顺昌，乡村振兴探新章</p>
+                            <a href="https://www.douyin.com/video/7543633191035325722" target="_blank"
+                                class="media-link">查看视频</a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- 我们的宣传 -->
+                <div class="media-section">
+                    <h3 class="media-category">我们的宣传</h3>
+                    <div class="media-list">
+                        <div class="media-item">
+                            <div class="media-source">
+                                <span class="media-name">“生命智联”抖音号</span>
+                                <span class="media-date">2025-08</span>
+                            </div>
+                            <p class="media-title">暑期实践进行时︱"生命智联"赴顺昌，乡村振兴探新章</p>
+                            <a href="https://www.douyin.com/video/7543633191035325722" target="_blank"
+                                class="media-link">查看视频</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 合作 -->
+        <div id="hezuo-id" class="hezuo">
+            <p class="chengguo-title">合作</p>
+
+            <!-- 合作单位 -->
+            <h2 class="section-title" id="hezuo1-id">合作单位</h2>
+            <div class="organization-container">
+                <!-- 主办单位 -->
+                <div class="organization-section">
+                    <h3 class="org-category">主办单位</h3>
+                    <ul class="org-list">
+                        <li>北京师范大学生命科学学院</li>
+                        <li>福建省顺昌县第一中学</li>
+                        <li>数智联合科技管理创新中心</li>
+                        <li>北京师范大学"生命智联"实践队</li>
+                    </ul>
+                </div>
+                <!-- 支持单位 -->
+                <div class="organization-section">
+                    <h3 class="org-category">支持单位</h3>
+                    <ul class="org-list">
+                        <li>共青团顺昌县委员会</li>
+                        <li>福建省顺昌县文旅局</li>
+                        <li>福建省顺昌县元坑镇政府</li>
+                        <li>福建省顺昌县仁寿镇政府</li>
+                        <li>福建省顺昌县科协</li>
+                        <li>福建省顺昌县妇女联合会</li>
+                        <li>北京师范大学BNU-China iGEM竞赛队</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 合成创生板块 -->
+            <h2 class="section-title" id="hezuo2-id">合成创生</h2>
+            <div id="chuangsheng-id" class="chuangsheng">
+                <div class="card-container">
+                    <!-- 第一张卡片：图片+文字 -->
+                    <div class="creation-card">
+                        <div class="card-media">
+                            <img src="./materials/外场.png" alt="合成生物学研究">
+                            <!-- <div class="media-overlay">
+                                <a href="https://mp.weixin.qq.com/s/7FlD9PqyXBNGEybOmmvVpA" class="media-link"
+                                    target="_blank">查看详情 →</a>
+                            </div> -->
+                        </div>
+                        <div class="card-content">
+                            <h3>合成生物学科普嘉年华暨“生命智联”实践队外场活动</h3>
+                            <p>5月24日，北京师范大学“生命智联”实践队联合北京师范大学BNU-China
+                                iGEM竞赛队等单位，于北京师范大学邱季端体育馆南侧举办合成生物学科普嘉年华暨”生命智联”外场活动。本届嘉年华活动以”生命编码，合成新章”为主题，旨在于五月的国际生物多样性日宣传推广合成生物学以及生物多样性的知识，增进全校师生对合成生物学的认知，同时助力”生命智联”实践队推广实践活动，开展宣传工作。
+                            </p>
+                            <a href="https://mp.weixin.qq.com/s/7FlD9PqyXBNGEybOmmvVpA" class="text-link"
+                                target="_blank">浏览外场活动更多内容>></a>
+                        </div>
+                    </div>
+
+                    <!-- 第二张卡片：视频+文字 -->
+                    <div class="creation-card">
+                        <div class="card-media">
+                            <video controls poster="./materials/合成创生.png">
+                                <source src="./materials/合成创生.mp4" type="video/mp4">
+                                您的浏览器不支持视频播放
+                            </video>
+                        </div>
+                        <div class="card-content">
+                            <h3>“生命智联”实践队⨉BNU-China iGEM</h3>
+                            <p>课堂上，同学们学习何为“合成生物学”，学习DBTL（设计-构建-测试-学习）的科研思路，亲自动手拼接质粒，编织蛋白质分子竹笼，了解2025BNU-China的V-Charges项目。
+                            </p>
+                            <p>辩论会“合成生物学的广泛应用是利大于弊还是弊大于利”，带领同学们思考合成生物学的伦理问题和实际应用，在团队协作与相互交流中攀登科技高峰。</p>
+                            <p>“生命智联”夏令营的结营仪式上，共有50名优秀营员获得了来自 2025 BNU-China的文创礼袋，包括iGEM团队定制的文件夹、笔记本、签字笔和明信片。</p>
+                            <a href="https://mp.weixin.qq.com/s/gMMeQszQlf8JA9yLlfKwQQ" class="text-link"
+                                target="_blank">了解更多有趣的瞬间吧>></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 关于顺昌 -->
+        <div id="shunchang-id" class="shunchang">
+            <p class="shunchang-title">关于顺昌</p>
+            <div class="shunchang-container">
+                <!-- 左侧文字描述 -->
+                <div class="shunchang-text">
+                    <h2 class="slogan">“大圣祖地，零碳顺昌”</h2>
+                    <div class="description">
+                        <p>顺昌县位于福建省西北部，武夷山脉南麓，闽江上游富屯溪、金溪汇合处，为“闽江起源处、顺达昌盛地”。属中亚热带海洋性季风气候，同时又受大陆性气候的一定影响。</p>
+                        <p>顺昌县后唐长兴四年建县，据清嘉庆《延平府志》记载：“以其初顺服，故名，取顺而昌之意。”自此历代沿用。</p>
+                    </div>
+                </div>
+
+                <!-- 中间特色罗列 -->
+                <div class="shunchang-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">🌿</div>
+                        <h3>绿水青山造就生态福地</h3>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🐒</div>
+                        <h3>崇猴文化孕育大圣祖地</h3>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">⛏️</div>
+                        <h3>资源禀赋涵养丰饶宝地</h3>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📜</div>
+                        <h3>千年底蕴滋养文化善地</h3>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">💼</div>
+                        <h3>新兴产业汇聚投资洼地</h3>
+                    </div>
+                </div>
+
+                <!-- 右侧箭头链接 -->
+                <div class="shunchang-more">
+                    <a href="https://mp.weixin.qq.com/s/VL7BF9w5jBMfnvO1csEOjw" class="more-link" target="_blank"
+                        aria-label="了解更多顺昌信息">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none"
+                            stroke="#8b4513" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 8 16 12 12 16"></polyline>
+                            <line x1="8" y1="12" x2="16" y2="12"></line>
+                        </svg>
+                        <span>了解更多顺昌信息</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 关于我们 -->
+        <div id="women-id" class="women">
+            <p class="shunchang-title">关于我们</p>
+            <div class="women-container">
+                <!-- 队员感想（单独一行） -->
+                <div class="women-section full-width" id="team-feelings">
+                    <h3 class="subsection-title">关于顺昌之行，我们想说的话...</h3>
+                    <div class="feelings-columns">
+                        <!-- 第一列（7条） -->
+                        <div class="feelings-column">
+                            <!-- 示例条目1 -->
+                            <div class="feeling-item">
+                                <button class="feeling-toggle" aria-expanded="false">
+                                    <span class="feeling-name">杨凯泽</span>
+                                    <span class="feeling-summary">田埂巷陌里的每一步才是乡村振兴生动的每一步...</span>
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                                <div class="feeling-details">
+                                    <p>盛夏因实践而更加多彩，十几天的实践调研和夏令营活动令我收获颇多。初次调研，步入乡下，让我深刻明白田埂巷陌里的每一步才是乡村振兴生动的每一步；深处绿水青山，才理解金山银山的价值所在；夏令营短暂却深刻，从备课的忐忑到课堂的自如，我在与孩子们的互动中读懂教育的温度。明白教育的意义不是灌输，而是让知识与生命在律动中共舞。这次美妙的经历，让我认识了许多聪明能干的队友们，感受到一个自强上进的团队氛围，从素不相识到团结互助，从零开始到完满结营，我们的每一步走得深刻且踏实。在实践队里的成长收获，会成为我人生的重要经验，助力自我发展。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="feeling-item">
+                                <button class="feeling-toggle" aria-expanded="false">
+                                    <span class="feeling-name">吴夏瑄</span>
+                                    <span class="feeling-summary">教育原是一场双向的温柔...</span>
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                                <div class="feeling-details">
+                                    <p>十二天的实践如同一捧握不住的流萤，在蝉鸣渐弱时悄然掠过指尖。回望这段时光，我走过长满荷花的田埂，听到阿嫲们共同唱响的歌声，第一次生涩却勇敢的站上讲台，回应学生们的每个问题，场面和声音交织，等到上了车，回了家，好像就融化成了一场梦。在盛夏里织就得最珍贵的记忆。
+                                        第一次前往乡村调查，成片连绵的青山和万里无边的荷塘，我们在“世外桃源”里听人间的故事，唱歌的阿嫲告诉我他们不敢管随地吐痰的人，村里的工业污染严重但没有工业又没有了收入。在荷叶的梗部我们发现福寿螺的卵，突兀的粉色格格不入。杉木场里永远恒温的房间，里面装了当地科研人员用心血浇灌的小苗，星星点点的绿色，长出来富饶的希望。
+                                        初登讲台时，教案上的字迹还带着反复涂改的痕迹。但幸运的是，我得到了每一个学生积极的回应。那些被我视为 “疏漏”
+                                        的瞬间，总被孩子们温柔接住——他们会认真记下我临时补充的知识点，在提出问题时积极地说出自己的想法也会在我每一个慌乱又着急的瞬间，带笑的回应我的眼神。这些细碎的包容与回应，比任何教学技巧都更让我明白，教育原是一场双向的温柔。
+                                        辩论赛那天，当孩子们为“合成生物学的广泛应用是利大于弊还是弊大于利”争得面红耳赤，却在结束时主动为对方辩手鼓掌时，我忽然读懂教育的另一种形态：我们不必是完美的引导者，却能与学生共同生长。
+                                        十二天太短，短到来不及完善所有课程细节；但已经足够让我明白，所谓成就感从不是来自完美的教案，而是那些被尊重浸润的瞬间——当孩子们眼睛发亮地举起手，当他们说
+                                        “老师明天见” 时的雀跃，早已把所有青涩都酿成了甘甜。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="feeling-item">
+                                <button class="feeling-toggle" aria-expanded="false">
+                                    <span class="feeling-name">朱晓菲</span>
+                                    <span class="feeling-summary">顺昌，再相见时希望我们都能更近一步...</span>
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                                <div class="feeling-details">
+                                    <p>第一次当队长，很荣幸能遇到这么一群充满热情又积极向上的队友，一群聪明可爱十分捧场的学生。不同于我的上一次实践，我做得很多工作在于统筹规划和处理各种突发情况，并不和大家一样把大部分时间用来备课、磨课、上课……有时候我也会惋惜没能和大家一样，在教学实践中体会到很多和学生共同成长的乐趣与成就感。但是看到队员们分享教学中的趣事、学生们在课堂中收获知识和友谊……我感觉到能服务大家真是一件让我最有满足感的事情，就像最后的结营仪式中，虽然没有上台表演，但是看到大家玩得开心，我也感到很幸福。
+                                        在顺昌这十四天，几乎把这个小县城中心城区的几条主干道走完了，这里山清水秀
+                                        、民风淳朴，是一座很美丽的小城。来的时候下了好大的雨，而走的时候刚好是个晴天，让我好好再看看这片土地，曾经如此亲密了解的这座闽北县城，再相见时希望我们都能更进一步。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="feeling-item">
+                                <button class="feeling-toggle" aria-expanded="false">
+                                    <span class="feeling-name">白宇婕</span>
+                                    <span class="feeling-summary">山水有相逢，未来皆可期...</span>
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                                <div class="feeling-details">
+                                    <p>在本次社会实践中，我回到了家乡福建，一方面，与熟悉的山林、云海、美食和村落重逢；另一方面，与“生命智联”实践队和顺昌一中弟弟妹妹们相遇。这是我第五次参加暑期社会实践，第四次暑期支教，在顺昌的半个月，又给我带来了不一样的经历、感悟与成长。
+                                        具体的经历我就不说了（详情请见我们的推文和视频！！！），分享部分“我怀念的”的瞬间吧——夏夜雨后足球场上的飞盘、过度用嗓后办公室里的大西瓜、大中午调研时小飞（鱼豆腐老板）买的菊花茶、精心制作的光彩夺目但“稍纵即逝”的螺钿蝴蝶......还有许许多多关于大家的帧帧画面在脑海中浮现。我想，每一个经历，都将在我们的成长中留下永恒的烙印。山水有相逢，未来皆可期！
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="feeling-item">
+                                <button class="feeling-toggle" aria-expanded="false">
+                                    <span class="feeling-name">田嘉怡</span>
+                                    <span class="feeling-summary">为生态保护和乡村振兴贡献自己的力量...</span>
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                                <div class="feeling-details">
+                                    <p>在这次生命智联实践队的活动中，我收获满满。在支教的过程中，与学生们的互动交流让我感受到教育的意义和知识的力量，也锻炼了我的表达和沟通能力。站上讲台的时候感觉自己瞬间代入了老师的角色。为学生们拓展讲解之前可能只是稍微接触过的知识，带领他们亲手去做实验，将原本只存在于书面上的知识搬到现实中来。虽然时间还是太短，我只能挑挑选选一些比较有意思的知识点来进行讲解，但我相信通过本次的课程会有很多学生对生物这门看似枯燥的学科产生了更多的兴趣。希望他们在以后会一直怀揣着对于生物的兴趣，去探索更多的知识。
+                                        在调研生态产业转型案例时，我深入了解了当地如何利用自然资源实现可持续发展，这拓宽了我的视野，也让我对生态保护有了更深刻的认识。我将带着这份宝贵的经历，继续努力学习，为生态保护和乡村振兴贡献自己的力量。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="feeling-item">
+                                <button class="feeling-toggle" aria-expanded="false">
+                                    <span class="feeling-name">卢心然</span>
+                                    <span class="feeling-summary">感谢实践为我的生命里带来了阳光和朝气...</span>
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                                <div class="feeling-details">
+                                    <p>首先感谢团队给予的机会，ip设计这大虽然没有起到很大的作用但依然感谢宣传组的循循善诱。感谢队友们一直以来的陪伴和帮助，你们是我合作过的最好一个团体，每一个人都非常温暖体贴，在队伍中发挥着独特的作用，
+                                        特别赞美队长副队领队的统筹规划，特别赞美团队里的方能插件杨凯泽以及每天一起下班的宣传组同志们，
+                                        你们辛苦了。还要感谢帮打蟑螂的老师们，老师太帅了，在队伍里认识了很好的朋友，有些相见恨晚。顺昌一中的宝宝们表现远超期待，使是基础比较弱的同学也在努力学，没有轻易放弃，非常爷人感动，这样精神论在任何域都十分可贵的。我在上课时确实会紧张，也会忘词，
+                                        课程也有很多设置有待改进的地方，非常抱歉，感谢同学和老师们的包容，我以后会更加自信大方的！多希望这次分别不是永远，感谢这次实践为我的生命里带来了阳光和朝气。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="feeling-item">
+                                <button class="feeling-toggle" aria-expanded="false">
+                                    <span class="feeling-name">周欣源</span>
+                                    <span
+                                        class="feeling-summary">在调研的跋涉里，读懂了乡土中国、生态产业的深沉与希望；在教学的相长中，体悟了“师者”二字的分量与甜蜜...</span>
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                                <div class="feeling-details">
+                                    <p>福建顺昌，一个名字在行前还略显陌生的地方，如今沉甸甸地坠在心底，满是暖意与回甘。何其有幸，在这趟“生命智联”的旅程里，遇见了一群特别特别好的队友——是深夜磨课时相互打气的伙伴，是乡间小路上并肩说笑的同行者；还有可爱的老师们以及明亮的高中孩子们。
+                                        第一次踏上福建的土地，处处都飘着新鲜劲儿。非遗“灌蛋”把肉馅儿稳稳安进蛋黄里，灵巧的非遗剪纸在手中翻飞，还有冰冰凉、甜丝丝的烧仙草，成了调研途中熨帖的慰藉。这些味道与技艺，是顺昌递给我的第一张名片，鲜活又亲切。跟着队友们穿梭在村落间，踩着田埂，听着乡音。调研不再是纸上的课题，而是眼前流淌的画卷：青山绿水间，是乡亲们守护生态的智慧；阡陌交通处，能触摸到乡村振兴跳动的脉搏。
+                                        在调研后，我们站在讲台之上，发生心与心的化学反应。我带着孩子们推开“有机化学”那扇奇妙的大门，从结构的优雅到原子碰撞的奥秘；共同走进实验室，看着化学红绿灯映亮他们好奇的脸庞）此处特别特别赞一个陈源老师！！专业又可爱，很难不爱的老师哇哇哇！！）；在那些求知若渴的眼神鼓励下，把高数的“极限”也悄悄种下种子……备课到深夜的灯光，反复推敲的教案，都融化在他们恍然大悟的声音里。这些孩子们有思想，有温度，他们的问题和思考常常闪着光照亮我的灵感。队友们默契配合，“学为人师，行为世范”的校训，是我们一起精心准备的精彩课堂。
+                                        这段日子，像被顺昌的山水和人情温柔浸泡过。在调研的跋涉里，读懂了乡土中国、生态产业的深沉与希望；在教学的相长中，体悟了“师者”二字的分量与甜蜜。收获的感动、与启迪，在心里酿成了醇厚的酒，一直在回甘。顺昌的青山绿水里，生命的智慧在互联，感谢这段美好的实践时光！
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- 第二列（6条） -->
+                        <div class="feelings-column">
+                            <!-- 示例条目8 -->
+                            <div class="feeling-item">
+                                <button class="feeling-toggle" aria-expanded="false">
+                                    <span class="feeling-name">李宇欣</span>
+                                    <span class="feeling-summary">生命智联，后会有期...</span>
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                                <div class="feeling-details">
+                                    <p>从顺昌回到北京之后，实践队这段时间的经历才迟迟地泛起涟漪。绿水青山和清新的空气，澄明的天空和震撼的层云，自然不知不觉滋润着心田，留下一段唇齿留香的记忆。
+
+                                        实践和支教是这趟旅途的两部分。先从实践说起，我们从参观国有林场到深入乡村调研，从每一棵杉木后的久久为功到亲睹升升木业安全有序的加工程序，一路深刻了解了杉木木业对当地经济的带动和升升木业的领头羊作用。印象颇深的是深入蛟溪村调研时，跟路边杂货铺的摊主大姨聊天，收集生态文明调研问卷。问卷前半部分是许多法规法条的内容，大姨扫了一眼就笑道：“这个我哪懂的，我才小学毕业哪懂得呀。”到后面贴近生活的问题时，化工厂污水排放、店门口随地吐痰，大姨一下有了话说，目光坚定：“污水排放肯定要制止的呀，他排放污水影响我们生活的。我要是知道了肯定制止的。随地吐痰，哪能叫他们在门口吐痰，太坏了啊。”还有电器使用、生活用水重复利用，很多时候都是“节省”的选择，“哪那么富贵呦，白天有光的时候就不开灯。”或许碍于当地的发展程度限制，大姨的文化程度不高，但当地村民的心却是有着朴素的生态文明观认识。这样美、这样清新、这样淳朴的风土人情，值得更好的发展，居民值得更好的生活。
+                                        之后是支教，甫一开始校长便严肃地讲：“希望你们带我们学生看看更大的世界，真的能留下些什么。”先在心上留下郑重的托付。后面的授课其实一直有些惴惴，害怕自己讲的知识是否真的有用，是否太简单无聊，又是否太深奥难懂。于是也一堂课一堂课后持续打磨，不敢懈怠这份责任。我的课是《感官探秘》，第一节课上完后就开始马不停蹄地改课，临时加了些更深更难的概念，因为发现学生程度不错，很多东西都是已经了解过的。所以从宏观的感官功能细化，进入更微观的信号转导机制，第二信使cGMP，不同激发方式的转运蛋白和对应的不同换能机制。最后一节课上完也终于是松一口气，不敢讲上课有多好、对他们的人生有什么影响，起码是留下了些新知，玩过、学过、更深入一步初中生物未触及的领域，也算是尽力而为，不辱使命。
+                                        此外，十二天的实践支教活动中，令我感动的还有同队的这些人们，我的“老师同事”和“工作伙伴”。备课惴惴，纠结来去还是拉了同寝的师姐乔顺深夜听课，再一一对讲授不明的地方改进。第一节课时紧张异常，也多亏了她一直守着。除了相机记录课堂，每一次不安时，总能在人群中找到她的目光和支持的笑容，课间和我聊天缓解紧张情绪。像是一种魔力，让我平安顺遂地跨过初为人师的不安和自我怀疑。
+                                        “工作”则是公众号的排版、文案和发布，由于每天除了上课、助教、备课外，还要发布当天的支教日记和实践队的实践活动等等，宣传组有时一天要发2-3篇推送，还要卡在十二点前发送，所以和宣传组的“工作伙伴”几度最后离开办公室，结伴打手电筒回寝。“下班！”每次喊出这句话都如释重负，因为这意味着终于发完了推送，成就感和迫不及待躺到床上的兴奋混合冲击着我的心。回寝的路不轻松，时而有南方独有的“双马尾”爬来爬去，几个人结伴不停吐槽气候、吐槽课程、吐槽蟑螂来壮胆。终于看到宿舍的曙光，宛如刚玩完密室逃脱般惊魂。每次都哀嚎着“谁再搞宣传谁就是狗”，但下一次宣传任务来了又干劲十足地仔细做起来。我们宣传组的人都是很认真很靠谱的人，排版、剪辑、视频、推送，每一项都干得很漂亮！很开心能和这样相互支持的伙伴共度十二天。
+                                        其他的诸如分享零食，互相体验课程内容，准备结营仪式的排练，午餐美味的汤和鱼豆腐，都是我在支教中如数家珍的宝贵回忆。和这样一群人走过这样不长不短的时光，何尝不是一种幸运呢？
+                                        最后的最后，还要感谢每天早上都义务劳动，帮我们人工外卖早餐的杨凯泽师兄，非常非常之靠谱的师兄！深夜睡前早餐群一条条信息，第二天办公室里就飘着肠粉、小笼包、扁肉、油条的香气，很难想象没有师兄我们怎么活哪（呜呜）。
+                                        生命智联，我们后会有期！
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="feeling-item">
+                                <button class="feeling-toggle" aria-expanded="false">
+                                    <span class="feeling-name">徐维佳</span>
+                                    <span class="feeling-summary">有青山，有绿水；有美食，有故事；有杉木，有大圣；更有亲爱的队员们和可爱的同学们...</span>
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                                <div class="feeling-details">
+                                    <p>一次期待已久的实践，数不清这是多少次迎着五点的晨曦出发，抛开学业的痛苦，满怀着期待和热情踏上了飞奔向顺昌的火车。南方以她特有的雨的情怀迎接了我们的到来，湿润的空气，泥土的气息，洗净一身舟车劳顿，也是独一无二的开始！
+                                        好奇地听着校长讲大圣的传说故事，参观这个将要与我们朝夕相处两周的校园；认真地倾听杉木育种背后的艰辛，小心地走进种着小小树苗的培养室；从升升木业到元坑镇谟武村，生态文明和乡村振兴的理念在这里体现得淋漓尽致。“最担心”的街头问卷调查，磕磕绊绊地迈出第一步，慢慢融入村子里老人们的话题中。这是一个环境优美，幸福感超棒的地方！
+                                        开始授课啦！纠结着课程内容与学生的适配度，每次都略带慌乱地备课，然后假装气定神闲地走进教室，开始“梦游式”地讲课，稍显自由的大脑可能更加讲得开哈哈。第一次上一些跟自己专业相关的知识点，每次讲完感觉都能让自己更透彻一点。喜欢课堂上跟同学们的互动(尽管我自己站在学生的角度更喜欢做一个课堂“透明人”)，看着他们的积极反应和对知识的好奇渴望，充满了很多可能被我们弄丢的青春活力，要向他们学习哦！每位老师准备的课程都很用心，当一名助教辅助拍照，并接受一些其他领域的知识也是一件有趣的事情。文化，音乐，绘画，体育和科学知识，交织在欢笑声中编织了整个夏令营的灿烂画卷。
+                                        不舍，时间总是开始很慢又突然很快，好像刚刚熟悉了这里，就到了告别的时刻。课堂知识也许微不足道，重要的是我们一起去认识了更新的世界，在脑海里想象出美好的未来。最后一刻，所有人都夸3班最乖，不是吗！零食小礼包也许微不足道，重要的是一起度过的时光！
+                                        有青山，有绿水；有美食，有故事；有杉木，有大圣，更有亲爱的队员们和可爱的同学们，谢谢所有奔赴生命智联的你们，谢谢这一次美好的旅程😊！!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="feeling-item">
+                                <button class="feeling-toggle" aria-expanded="false">
+                                    <span class="feeling-name">陈源</span>
+                                    <span class="feeling-summary">山山水水，暖暖人情...</span>
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                                <div class="feeling-details">
+                                    <p>从北京来到顺昌，感到无比的亲切，和家乡同样的山山水水、同样的暖暖人情……其实我的心里是无比忐忑的，相比于无纪律的课堂，我更惧怕上课没有人理我。即使做了很多准备，第一次上大课还是紧张的不行，但是，上了课发现，同学们真的很配合，课堂氛围很好很好，上得非常开心，以至于下课了才觉得站了一个半小时好累好累。非常感谢同学们的配合，非常感谢“助理”们帮我准备实验、收拾实验室，非常感谢欣源师姐还有我的班长包容我爱睡懒觉……在顺昌的12天非常开心，上了想上的课，做了想做的实验，吃了好吃的饭，受到了热情的款待，明年争取再来～
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="feeling-item">
+                                <button class="feeling-toggle" aria-expanded="false">
+                                    <span class="feeling-name">杨昕彤</span>
+                                    <span class="feeling-summary">在社会的“大课堂”中学习、体验、成长...</span>
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                                <div class="feeling-details">
+                                    <p>又一次踏上了社会实践的旅程，和以往经历不同，这一次更多了一份责任与期待，看着早早准备好的行程、活动、课程一项项落地，心中也多了一份踏实和满足。我们坐着大巴车穿梭在山间小镇，深入农户走访调查，聆听乡亲们讲述他们的生活与故事，体悟乡村振兴的生动实践，在社会这个“大课堂”中学习、体验、成长…我们走进校园，与学生们共同进步，践行师者的责任担当，
+                                        当我读到同学们的真诚反馈，我的课程原来真的可以让他们对计算机，人工智能产生一些兴趣启蒙，我想这也是作为一名小小老师最幸福的事。实践的日子过得很快，而在这里所经历的一切幸福瞬间，都将成为我未来生活中的动人回忆。感谢和我们一起并肩作战的队友们，愿所有美好的人都能万事顺遂，毫无蹉跎。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="feeling-item">
+                                <button class="feeling-toggle" aria-expanded="false">
+                                    <span class="feeling-name">崔家乐</span>
+                                    <span class="feeling-summary">同学们的感悟，是此行最珍贵的回忆...</span>
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                                <div class="feeling-details">
+                                    <p>为期十二天的实践虽短，未能教授太多具体知识，却收获了同学们积极的反馈与好评。将原本枯燥的算法知识融入生活应用，并清晰地向中学生阐释，对我而言是一项不小的挑战。值得欣慰的是，我成功做到了。正如一位同学在总结中所写：“升入初中后，所学知识常感与现实脱节，但雀老师的算法课让我看到，那些复杂的逻辑与知识最终都能在生活中运用；甚至生活的行为本身，也蕴含着算法的逻辑。”同学们的感悟，是此行最珍贵的回报。.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="feeling-item">
+                                <button class="feeling-toggle" aria-expanded="false">
+                                    <span class="feeling-name">乔顺</span>
+                                    <span class="feeling-summary">闪烁着光芒的日子...</span>
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                                <div class="feeling-details">
+                                    <p>支教在1月的蝉鸣中结束，虽然现在我又坐回了工位，但站在讲台上的那段日子总是闪烁着光芒。支教是一段快乐的旅程，虽然会飞的蟑螂让我时不时爆发出开水壶的尖叫，但也有雨后的蘑菇、嫩绿的青草、可爱的云朵做点缀，让整个旅程焕发生机：生命智联支教队也是一个友爱的团队，大家一起备课，一起发疯，在漆黑的夜晚抱团躲避蟑螂的袭击：支教学生更是一群可爱的朋友，他们阳光开朗，对知识充满好奇和渴望，虽然我有时候也会为纪律发愁，学生可能也被我的课折磨，但大家真的都是特别可爱的学生!虽然支教已经结束了，但我们不会止步于此，祝愿大家都有美好的未来，我们后会有期!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 联系方式和招募信息（并排一行） -->
+                <div class="women-row">
+                    <!-- 联系方式 -->
+                    <div class="women-section half-width" id="contact-info">
+                        <h3 class="subsection-title">联系方式</h3>
+                        <div class="contact-content">
+                            <a href="mailto:LifeUnion_China@outlook.com" class="contact-email">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="#8b4513" stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                LifeUnion_China@outlook.com
+                            </a>
+                            <p>"生命智联"抖音号</p>
+                            <img src="./materials/dy.jpg" alt="dy" class="dy">
+                        </div>
+                    </div>
+
+                    <!-- 招募信息 -->
+                    <div class="women-section half-width" id="recruitment">
+                        <h3 class="subsection-title">招募信息</h3>
+                        <div class="recruitment-content">
+                            <p class="p1">我们将与顺昌一中建立校地合作长效赋能机制，期待感兴趣的小伙伴们的加入！</p>
+                            <p class="p1">欢迎您关注我们的公众号，了解更多资讯，期待发布招募信息。</p>
+                            <div class="vx">
+                                <p class="p2">"生命智联"公众号</p>
+                                <img src="./materials/vx.jpg" alt="dy" class="vx">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="address">
+                Address: 18th, Jinfeng st. xiangzhou District, zhuhai, Guangdong, P.R.C<br>
+                Postcode: 519080
+            </div>
+            <div class="copyright">
+                © 2025 - Content on this site is licensed under a
+                <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+                    Creative Commons Attribution 4.0 International license
+                </a>.
+            </div>
+        </div>
+    </footer>
+
+    <script src="./static/script.js"></script>
+
+</body>
+
+</html>
